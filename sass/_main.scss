@@ -1,0 +1,19 @@
+// Normally mainpage styles
+ 
+ //header
+ .header{
+	@include povh('');
+ }
+	
+
+ //main
+ .main{
+	@include povh('');
+ }
+	
+	
+ //footer
+ .footer{
+	@include povh('');
+ }
+

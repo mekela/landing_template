@@ -1,0 +1,78 @@
+<h1 id="sass-">Sass шаблон для лендінгів</h1>
+<ul>
+<li>прикручена форма відправки повідомлень на email користувача. Дані користувача можна редагувати в ajax.php</li>
+</ul>
+<h1 id="-">Структура</h1>
+<p><code>/css/screen.css</code> - В цей файл генерується код з screen.scss</p>
+<p><code>/css/style.css</code> - Таблиця стилей створена для редагування виключно методом css </p>
+<p><code>/sass/screen.scss</code> - Основний шаблон де підключаються інші файли .scss</p>
+<p><code>/sass/reset.scss</code> - Скидання всіх стилей і початкова стилізація сайту</p>
+<p><code>/sass/main.scss</code> - Всі стилі для сайту</p>
+<p><code>/sass/mobile.scss</code> - Стилі для адаптивної версії</p>
+<p><code>/sass/lib/mixins.scss</code> - Міксіни</p>
+<h1 id="-">Назви класів і т.д.</h1>
+<p>Стандартний вигляд шаблону:</p>
+<pre><code>&lt;div class=&quot;wrapper&quot;&gt;
+&lt;!--header--&gt;
+&lt;header class=&quot;header&quot;&gt;
+&lt;/header&gt;
+&lt;div class=&quot;main&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;!--inside info--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;footer class=&quot;footer&quot;&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+</code></pre><p><code>.wrapper</code> - Обгортка сайту</p>
+<p><code>.container</code> - Контейнер сайту, рівняє контент по центру</p>
+<h1 id="-">Інформація по використанню тегів</h1>
+<p>Основні теги html5 повинні бути з класами, і до класів має йти привязка стилей.
+Наприклад: </p>
+<pre><code>nav{color:black;} - поганий тон;
+nav.nav{color:black;} - хороший тон;
+</code></pre><h1 id="js">JS</h1>
+<p>Я використовую такі плагіни для цього шаблону:</p>
+<ul>
+<li><code>placeholder</code> - Підтримка placeholder в старих браузерах</li>
+<li><code>fancybox</code> - Стандартне модальне вікно, використовується на 90% сайтах.</li>
+<li><code>modernizr</code> - Підтримка старих браузерів</li>
+<li><code>bxslider</code> - Один з найкращих слайдерів</li>
+</ul>
+<p>Всі свої скрипти потрібно писати в файлі common.js</p>
+<h1 id="-">Методологія </h1>
+<ul>
+<li>_wrapper - головний батьківський блок</li>
+<li>_inner - батьківський блок</li>
+<li>_block - дочірній блок</li>
+<li>_item - найменший дочірній блок </li>
+</ul>
+<p>Приклад:</p>
+<pre><code>&lt;div class=&quot;contacts_wrapper&quot;&gt;
+    &lt;div class=&quot;contacts_inner&quot;&gt;
+        &lt;div class=&quot;contacts_block&quot;&gt;
+            &lt;div class=&quot;contacts_item&quot;&gt;City, Phone&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h1 id="-">Загальні правила</h1>
+<p>Якщо ваш клас використовується в javascript, то пишіть його з префіксом js-, наприклад:</p>
+<p><code>&lt;div class=&quot;contacts_item js-show&quot;&gt;City, Phone&lt;/div&gt;</code></p>
+<p>Якщо ви модифікуєте якийсь готовий елемент своїми стилями, давайте йому назву стилей які ви використовуєте:</p>
+<p><code>&lt;div class=&quot;contacts_item color_red&quot;&gt;City, Phone&lt;/div&gt;</code></p>
+<p>або</p>
+<p><code>&lt;div class=&quot;contacts_item bg_red&quot;&gt;City, Phone&lt;/div&gt;</code></p>
+<p>Всі великі блоки повинні бути відзначенні коментами, де початок, а де кінець:</p>
+<pre><code>&lt;!--header--&gt;
+&lt;header class=&quot;header&quot;&gt;
+
+&lt;/header&gt;
+&lt;!--end-header--&gt;
+</code></pre><p>Так само і css:</p>
+<pre><code>/*----header-----*/
+.header {
+  width: 1000px;
+}
+/*----end header-----*/
+</code></pre><p>Модальні вікна повинні мати клас .modal</p>

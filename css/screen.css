@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+h6, p, blockquote, pre, a, abbr, acronym, address, big,
+cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+body, html {
+  height: 100%;
+}
+
+img, fieldset, a img {
+  border: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span, a:focus {
+  outline: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    -webkit-text-size-adjust: none;
+  }
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+body {
+  font-family: "Arial";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.button {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  border-radius: 28px;
+  font-family: "Arial";
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+.button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+}
+
+input[type=text], input[type=email], input[type=phone], input[type=search], textarea {
+  width: 300px;
+  height: 25px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  color: #000;
+  font-size: 14px;
+  font-family: "Arial";
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=phone]:focus, input[type=search]:focus, textarea:focus {
+  box-shadow: 0 0 2px #99e6f9;
+}
+input[type=text].red_input, input[type=email].red_input, input[type=phone].red_input, input[type=search].red_input, textarea.red_input {
+  box-shadow: 0 0 2px  #ff2d50;
+  background: #fdc4ce;
+}
+
+input::-webkit-input-placeholder {
+  color: inherit;
+}
+
+input:-moz-placeholder {
+  color: inherit;
+}
+
+textarea {
+  height: 90px;
+  padding-top: 5px;
+}
+
+.modal {
+  display: none;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.float_left {
+  float: left !important;
+}
+
+.float_right {
+  float: right !important;
+}
+
+.float_none {
+  float: none !important;
+}
+
+.text_right {
+  text-align: right !important;
+}
+
+.text_center {
+  text-align: center !important;
+}
+
+.text_left {
+  text-align: left !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.fixed {
+  position: fixed !important;
+}
+
+.background_none {
+  background: none !important;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.thanks.modal b {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.header {
+  position: relative;
+  overflow: hidden;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer {
+  position: relative;
+  overflow: hidden;
+}

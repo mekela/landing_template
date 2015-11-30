@@ -1,0 +1,17 @@
+// Normally mainpage styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+//styles for custom device width
+@include mq($max-width: 1000px) {
+  
+}
+
+//styles for ipad
+@include ipad {
+	
+}
+
+//styles for iphone
+@include iphone5 {
+
+} 
